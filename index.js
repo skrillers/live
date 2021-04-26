@@ -14,7 +14,7 @@ async function handleRequest(request) {
   let URLT = new URL(request.url);
   let file_code = URLT.searchParams.get("channel")
   let q = URLT.searchParams.get("q")
-  let url = "https://livetvkyte.herokuapp.com/"+file_code
+  let url = "http://livetvkyte.herokuapp.com/"+file_code
 
   let res = await fetch(url);
   let obj = await res.json(); 
