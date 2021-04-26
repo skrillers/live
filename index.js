@@ -22,3 +22,8 @@ async function handleRequest(request) {
   var finalURL = obj[q].url;
   return Response.redirect(finalURL, 301);
 }
+const PORT = process.env.PORT || 5000;
+
+
+
+app.listen(PORT, () => console.log(`server start on ${PORT}`));
